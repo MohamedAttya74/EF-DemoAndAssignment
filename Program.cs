@@ -1,11 +1,37 @@
-﻿namespace EF_DemoAndAssignment
+﻿using EF_DemoAndAssignment.Data;
+
+namespace EF_DemoAndAssignment
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-           
+            CompanyDbContext context = new CompanyDbContext();
 
+            var employee = context.Employees.Where(E => E.ID==1).FirstOrDefault();
+
+            /// using CompanyDbContext context = new CompanyDbContext() ;   // Update for the Using 
+            /// Code 
+
+            /// using (CompanyDbContext context = new CompanyDbContext())
+            /// {         // Sentacx Sugar  With Out the Try,finaly 
+            ///
+            ///              //code 
+            /// } ;
+
+            /// CompanyDbContext context = new CompanyDbContext();
+            /// 
+
+            ///   try
+            ///   {
+            ///        // Code
+            ///   }
+            ///   finally
+            ///   {
+            ///       //Close the Connection
+            ///       context.Dispose();
+            ///
+            ///   }
 
 
 
