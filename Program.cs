@@ -77,6 +77,6 @@ ORM:   Concept  موجود بشكل عامل فكل اجزاء الباك اند
 
         ADO.NET :  Low Level code 
             يبقي شوفهم لانهم مهمين جدا جدا  Dapper    وال  EF Core   وال  ADO.NET  في مقارن كبيره بين ال 
-
+            
 
  */
